@@ -24,8 +24,16 @@ class TaskBloc extends Bloc<TaskEvent, TaskState> {
           updateList[event.index].isActive = event.isEnabled;
         }
         emit(state.copyWith(taskList: updateList));
+      } else if (event is UpdateFavoriteEvent) {
+        List<TaskEntity> updateList = List.of(state.taskList);
+        if (event.index >= 0 || event.index <= updateList.length) {
+          updateList[event.index].isFavorite = event.isFavorite;
+        }
+        emit(state.copyWith(taskList: updateList));
       } else if (event is DeleteTaskEvent) {
         emit(state.copyWith(taskList: List.of(state.taskList)..removeAt(event.index)));
+      } else if (event is ClearTasksEvent) {
+        emit(state.copyWith(taskList: []));
       }
     });
   }

@@ -7,7 +7,7 @@ class TaskState {
   final List<TaskEntity> taskList;
 
   bool get isEmptyValues {
-    if (title.isEmpty || detail.isEmpty) {
+    if (title.isEmpty) {
       return false;
     }
     return true;

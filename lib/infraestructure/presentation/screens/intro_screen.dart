@@ -37,8 +37,8 @@ class _Content extends StatelessWidget {
                 width: 350,
                 height: 150,
                 child: Text(
-                    'Tenes un dia con muchas actividades?..\n'
-                    'Con esta simple aplicación, las vas poder gestionar de mejor manera.',
+                    'Gestioná de mejor manera las tareas de tu día.\n'
+                    'Con esta simple aplicación, las vas poder recordar muy fácilmente..',
                     style:
                         TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 22),
                     textAlign: TextAlign.center)),

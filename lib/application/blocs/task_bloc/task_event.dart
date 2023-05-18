@@ -17,9 +17,18 @@ class AddTaskEvent extends TaskEvent {}
 
 class ClearFormEvent extends TaskEvent {}
 
+class ClearTasksEvent extends TaskEvent {}
+
 class DeleteTaskEvent extends TaskEvent {
   final int index;
   DeleteTaskEvent({required this.index});
+}
+
+class UpdateFavoriteEvent extends TaskEvent {
+  final int index;
+  final bool isFavorite;
+
+  UpdateFavoriteEvent({required this.index, required this.isFavorite});
 }
 
 class UpdateCheckBoxEvent extends TaskEvent {
