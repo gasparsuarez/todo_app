@@ -6,10 +6,7 @@ Se pueden agregar o eliminar elementos y, también visualizar los diferentes cam
 ## Estructura
 
  * Arquitectura Hexagonal.
- * Flutter BLoC y patrón BLoC como gestor de estados.
- * GoRouter 
- * Código limpio.
-
+ * Flutter BLoC como gestor de estados. 
 
 <img src="https://github.com/gasparsuarez/todo_app/assets/22453545/4740f6a3-d99d-41e4-868e-51e54b0ae19f" width="250">
 <img src="https://github.com/gasparsuarez/todo_app/assets/22453545/a4621942-5f3e-4cdf-a01c-4611c1a5b042" width="250">
